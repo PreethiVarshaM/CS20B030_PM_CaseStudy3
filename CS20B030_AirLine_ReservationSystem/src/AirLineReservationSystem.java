@@ -22,6 +22,7 @@ public class AirLineReservationSystem {
         else{
             System.out.println("You have chosen the wrong input...\nProceeding with the default settings");
         }
+        // display Menu-> it has all necessary functionalities of air line system.
         scan.close();
     }
-}
+} 
