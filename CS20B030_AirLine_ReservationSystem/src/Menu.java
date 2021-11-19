@@ -14,8 +14,15 @@ public class Menu {
             System.out.println("Starting process for creating New Account.");
             newAccount();
         }
+        else if(n==2){
+            System.out.println();
+        }
+        else {
+            System.out.println("Terminating Program...");
+            System.exit(0);
+        }
     }
     void newAccount(){
-        
+        //create new Account
     }
 }
