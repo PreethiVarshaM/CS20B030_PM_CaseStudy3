@@ -1,6 +1,7 @@
 import java.util.*;
 public class Menu {
     static Scanner scan=new Scanner(System.in);
+    static ArrayList<Customer> customer = new ArrayList<>();
     Menu(){
         display();
     }
@@ -24,5 +25,7 @@ public class Menu {
     }
     void newAccount(){
         //create new Account
+        User c=new User();
+                User.add(c);
     }
 }
