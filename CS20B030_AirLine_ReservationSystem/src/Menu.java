@@ -1,7 +1,7 @@
 import java.util.*;
 public class Menu {
     static Scanner scan=new Scanner(System.in);
-    static ArrayList<Customer> customer = new ArrayList<>();
+    static ArrayList<User> customer = new ArrayList<>();
     Menu(){
         display();
     }
