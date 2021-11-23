@@ -1,5 +1,5 @@
 import java.util.*;
-public class Menu {
+public class Menu extends User{
     static Scanner scan=new Scanner(System.in);
     static ArrayList<User> customer = new ArrayList<>();
     Menu(){
@@ -7,8 +7,8 @@ public class Menu {
     }
     void display(){
         System.out.println("Displaying Funtions...");
-        System.out.println("1. New User - Create new Account.");
-        System.out.println("2. ");
+        System.out.println("1. New User - Creates new Account.");
+        System.out.println("2. Existing User - Proceeds with Booking Process.");
         System.out.println(". Exit Program.");
         int n=scan.nextInt();
         if(n==1){
@@ -16,7 +16,7 @@ public class Menu {
             newAccount();
         }
         else if(n==2){
-            System.out.println();
+            System.out.println("Starting the Booking Process.");
         }
         else {
             System.out.println("Terminating Program...");
@@ -26,6 +26,6 @@ public class Menu {
     void newAccount(){
         //create new Account
         User c=new User();
-                User.add(c);
+        customer.add(c);
     }
 }
