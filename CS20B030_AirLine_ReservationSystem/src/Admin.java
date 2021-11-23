@@ -2,7 +2,7 @@ import java.util.*;
 public class Admin {
     static Scanner scan=new Scanner(System.in);
     private static int num=0;
-    private static ArrayList<Airport> cities=new ArrayList<Airport>(num);
+    private static ArrayList<Airport> cityList=new ArrayList<Airport>(num);
     Admin(){
         System.out.println("Choose the number corresponding to the respective option:");
         System.out.println("1. Proceed with default settings.");
