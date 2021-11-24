@@ -101,5 +101,10 @@ public class User extends UserDetails{
         setPhNum();
         setpin();
         setAccNum();
+        setAge();
+        setoccu();
+        setCurAddress();
+        setpadderess();
+        setpassnum();
     }
 }
