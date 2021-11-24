@@ -10,6 +10,7 @@ public class Admin {
         int n=scan.nextInt();scan.nextLine();
         if(n==2){
             //custom settings...
+            //number of 
         }
         else{
             System.out.println("Program now executes with default settings");

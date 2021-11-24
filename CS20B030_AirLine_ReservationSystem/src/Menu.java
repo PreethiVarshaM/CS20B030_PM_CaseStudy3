@@ -16,6 +16,7 @@ public class Menu extends User{
             newAccount();
         }
         else if(n==2){
+            //verify existing or not
             System.out.println("Starting the Booking Process.");
         }
         else {
