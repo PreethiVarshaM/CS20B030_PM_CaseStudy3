@@ -2,7 +2,7 @@ import java.util.*;
 public class Flight {
     static Scanner scan=new Scanner(System.in);
     private static String to="",from="",arrival="",departure="",flightnum="";
-    private static int fare=3000,jduration=60,numbclass=0,numseats=9;
+    private static int fare=3000,jduration=60,numbclass=0,numseats=9,booked=0;
     private static boolean bclass=false;
     Flight(){
         set();
@@ -27,5 +27,8 @@ public class Flight {
         System.out.println("Enter number of bussiness class seats: ");
         numbclass=scan.nextInt();scan.nextLine();
     }
-    
+    static void updatebooked(int n){
+        booked+=n;
+    }
+    static int getbooked(){return booked;}
 }
