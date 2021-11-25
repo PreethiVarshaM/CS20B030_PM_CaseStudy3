@@ -1,8 +1,12 @@
 import java.util.*;
-public class Menu extends User{
-    static Scanner scan=new Scanner(System.in);
+class arraylist{
     static ArrayList<User> customer = new ArrayList<>();
+}
+public class Menu extends arraylist{
+    static Scanner scan=new Scanner(System.in);
+    
     Menu(){
+        //System.out.println("fdgh");
         display();
     }
     void display(){
@@ -24,7 +28,7 @@ public class Menu extends User{
             System.exit(0);
         }
     }
-    void newAccount(){
+    static void newAccount(){
         //create new Account
         User c=new User();
         customer.add(c);

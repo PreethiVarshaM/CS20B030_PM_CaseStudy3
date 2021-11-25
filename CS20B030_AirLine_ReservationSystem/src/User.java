@@ -1,5 +1,5 @@
 import java.util.*;
-abstract class UserDetails { 
+abstract class UserDetails extends arraylist{ 
     //acts as a skeletal structure for customer object to note different details
     static Scanner scan=new Scanner(System.in);
     private static String customerName="null",AadhaarNo="null",PhNum="null",pin="null", accNum="null",paddress="null",currentadd="null",occupation="null",passnum="null",age="null",favSeat="null",BoE="null",gender="null";
@@ -80,15 +80,38 @@ abstract class UserDetails {
         passnum=scan.nextLine().trim();
     }
     static String getpassnum(){return passnum;}
+    static void setFavSeat(){
+        System.out.println("Enter W for window seat\nEnter A for aisle seat\nEnter M for middle seat");
+        favSeat=scan.nextLine().trim();
+        //check for mistypes
+    }
+    static String getfavSeat(){return favSeat;}
+    static void setBusOEco(){
+        System.out.println("Enter B for Bussiness class preference\n Enter E for Economy class Preference");
+        BoE=scan.nextLine().trim();
+    }
+    static String getBoE(){return BoE;}
     static void setmembers(){
         System.out.println("Enter the number of people that will associate with your travel:");
         int n=scan.nextInt();scan.nextLine();
-        System.out.println("Enter their names one by one:"); 
+        System.out.println("Creating new Account for your associates.");
         for(int i=0;i<n;i++){
             System.out.print("Name: ");
             String s=scan.nextLine().trim();
             Members.add(s);
-            //search list
+            System.out.println("__Account__");
+            Menu.newAccount();
+            //search if name is in array list or not
+        }
+    }
+    static void setcities(){
+        System.out.println("Enter the number of cities you visit frequently: ");
+        int n=scan.nextInt();scan.nextLine();
+        for(int i=0;i<n;i++){
+            System.out.print("City Name: ");
+            String s=scan.nextLine().trim();
+            //search if there in admin - airport cities list or not
+            cities.add(s);
         }
     }
 }
@@ -106,5 +129,8 @@ public class User extends UserDetails{
         setCurAddress();
         setpadderess();
         setpassnum();
+        setcities();
+        setFavSeat();
+        setmembers();
     }
 }

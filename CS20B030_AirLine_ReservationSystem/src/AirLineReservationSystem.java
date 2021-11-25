@@ -10,10 +10,12 @@ public class AirLineReservationSystem {
         int choice=scan.nextInt();
         System.out.println();
         if(choice==1){
-
+            //System.out.println("ddd");
+            Menu m=new Menu();
         }
         else if(choice==2){
-            
+            //System.out.println("aaa");
+            Menu m=new Menu();
         }
         else if(choice==3){
             System.out.println("Terminating program...");
