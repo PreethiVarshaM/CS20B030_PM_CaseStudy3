@@ -14,4 +14,7 @@ public class Airport {
     static String getDoI(){
         return DoI;
     }
+    static void printAllFlights(){
+        //display all details of all flights that arrive at the airport.
+    }
 }

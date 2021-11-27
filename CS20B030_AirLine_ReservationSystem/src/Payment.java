@@ -1,5 +1,5 @@
 public class Payment {
-    Payment(User u){
+    Payment(User u,TicketBooking T){
         
     }
 }
