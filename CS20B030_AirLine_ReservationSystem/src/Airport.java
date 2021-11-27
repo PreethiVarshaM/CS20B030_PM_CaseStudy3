@@ -17,4 +17,5 @@ public class Airport {
     static void printAllFlights(){
         //display all details of all flights that arrive at the airport.
     }
+    
 }
