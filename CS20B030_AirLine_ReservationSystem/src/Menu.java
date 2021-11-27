@@ -6,7 +6,6 @@ public class Menu extends arraylist{
     static Scanner scan=new Scanner(System.in);
     
     Menu(){
-        //System.out.println("fdgh");
         display();
     }
     void display(){

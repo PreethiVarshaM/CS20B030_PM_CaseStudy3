@@ -19,13 +19,17 @@ abstract class UserDetails extends arraylist{
         AadhaarNo=scan.nextLine().trim();
         System.out.println("Your Aadhaar Number is set.");
     }
-    static String getAadhaar(){return AadhaarNo;}
+    static String getAadhaar(){
+        return AadhaarNo;
+    }
     static void setPhNum(){
         System.out.println("Enter your phone number: ");
         PhNum=scan.nextLine().trim();
         System.out.println("Your Phone Number is set.");
     }
-    static String getphnum(){return PhNum;}
+    static String getphnum(){
+        return PhNum;
+    }
     void setpin(){
         System.out.println("Enter your Pin (lessthan or equal than 5 characters): ");
         pin=scan.nextLine().trim();
@@ -74,23 +78,31 @@ abstract class UserDetails extends arraylist{
         System.out.println("Enter your occupation: ");
         occupation=scan.nextLine().trim();
     }
-    static String getOccu(){return occupation;}
+    static String getOccu(){
+        return occupation;
+    }
     static void setpassnum(){
         System.out.println("Enter your passport number: ");
         passnum=scan.nextLine().trim();
     }
-    static String getpassnum(){return passnum;}
+    static String getpassnum(){
+        return passnum;
+    }
     static void setFavSeat(){
         System.out.println("Enter W for window seat\nEnter A for aisle seat\nEnter M for middle seat");
         favSeat=scan.nextLine().trim();
         //check for mistypes
     }
-    static String getfavSeat(){return favSeat;}
+    static String getfavSeat(){
+        return favSeat;
+    }
     static void setBusOEco(){
         System.out.println("Enter B for Bussiness class preference\n Enter E for Economy class Preference");
         BoE=scan.nextLine().trim();
     }
-    static String getBoE(){return BoE;}
+    static String getBoE(){
+        return BoE;
+    }
     static void setmembers(){
         System.out.println("Enter the number of people that will associate with your travel:");
         int n=scan.nextInt();scan.nextLine();
