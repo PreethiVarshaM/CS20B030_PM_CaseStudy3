@@ -2,6 +2,8 @@ import java.util.*;
 public class AirLineReservationSystem {
     public static void main(String[] args) throws Exception {
         Scanner scan=new Scanner(System.in);
+     
+
         System.out.println("Welcome to the Air Line Reservation System!!!");
         System.out.println("1. GO with predefined flight, destination and seating settings.");
         System.out.println("2. Define customised flight, destination and seating settings as ADMIN.");

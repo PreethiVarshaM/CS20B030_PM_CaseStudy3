@@ -30,5 +30,9 @@ public class Flight {
     static void updatebooked(int n){
         booked+=n;
     }
+    static boolean available(){
+        if(booked>=numseats)return false;
+        else return false;
+    }
     static int getbooked(){return booked;}
 }

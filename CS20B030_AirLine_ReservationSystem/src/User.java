@@ -102,6 +102,7 @@ abstract class UserDetails extends arraylist{
             System.out.println("__Account__");
             Menu.newAccount();
             //search if name is in array list or not
+            //customer.size();
         }
     }
     static void setcities(){
