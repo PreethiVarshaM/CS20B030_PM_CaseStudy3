@@ -36,6 +36,9 @@ public class Payment {
         //all payment functions
     }
     static void displayBill(User u,TicketBooking t){
-        
+        //to print the total price to be paid by the customer
+        System.out.println("===============================================================================");
+        //System.out.println("Total number of seats booked: "+ +"Price of each Seat"+ +"Total amount: "+ )
+        System.out.println("===============================================================================");
     }
 }
